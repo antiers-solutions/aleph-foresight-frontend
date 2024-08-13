@@ -1,0 +1,99 @@
+.homeSec {
+  position: relative;
+  &::before {
+    background-image: url("../../assets/beforeBg.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -170px;
+    content: "";
+    height: 1000px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.bannerSec {
+  margin-top: 60px;
+  .firstBanner {
+    background-image: url("../../assets/firstBanner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 458px;
+  }
+  .secondBanner {
+    background-image: url("../../assets/SecondBanner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 458px;
+    display: flex !important;
+    align-items: center;
+  }
+  .thirdBanner {
+    background-image: url("../../assets/thirdBanner1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 458px;
+    display: flex !important;
+    align-items: center;
+  }
+  .bannerContent {
+    border-radius: 20px;
+    .bannerLeftText {
+      max-width: 829px;
+      width: 100%;
+      padding: 90px 60px;
+      @media (max-width: 575px) {
+        padding: 47px;
+      }
+    }
+    h2 {
+      color: var(--white);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: var(--heading52);
+      font-weight: 800;
+
+      text-align: left;
+      .green {
+        color: var(--success);
+      }
+      .red {
+        color: var(--error);
+      }
+    }
+    p {
+      color: var(--grayDBDBDB);
+      font-size: var(--largeParaGraph16);
+      font-weight: 500;
+      text-align: left;
+      max-width: 711px;
+      width: 100%;
+      padding-top: 20px;
+    }
+    button {
+      max-width: 160px;
+      width: 100%;
+      margin-top: 42px;
+    }
+  }
+}
+.slick-dots {
+  bottom: -20px !important;
+  li {
+    width: 8px !important;
+  }
+  button {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 8px !important;
+  }
+  .slick-active {
+    width: 8px !important;
+    button {
+      background-color: var(--darkPurple) !important;
+    }
+  }
+}

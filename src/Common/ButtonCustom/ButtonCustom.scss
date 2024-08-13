@@ -1,0 +1,66 @@
+.btnCustom.ant-btn {
+  width: 100%;
+  padding: 0px 14px;
+  font-size: var(--largeParaGraph16);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.25s;
+  border: 0px;
+  box-shadow: none;
+  border-radius: 10px;
+  height: 50px;
+  background: var(--darkPurple);
+  color: var(--headerBg);
+  font-family: "Montserrat", sans-serif;
+  &:hover {
+    opacity: 0.9;
+    background: var(--darkPurple) !important;
+    color: var(--headerBg) !important;
+  }
+
+  .leftIcon {
+    margin-right: 7px;
+    display: flex;
+  }
+
+  .rightIcon {
+    margin-left: 5px;
+  }
+}
+
+.btnBorder {
+  border: 1px solid var(--darkPurple) !important;
+  background: var(--headerBg) !important;
+  color: var(--darkPurple) !important;
+}
+
+.btnCustom.ant-btn:disabled {
+  background: #00cbdf75 !important;
+}
+
+.yesBtn.ant-btn:disabled {
+  background: transparent !important;
+  color: var(--success) !important;
+  opacity: 0.6;
+  &:hover {
+    opacity: 0.6 !important;
+    background: transparent !important;
+    color: var(--success) !important;
+  }
+}
+.noBtn.ant-btn:disabled {
+  background: var(--error) !important;
+  color: var(--black) !important;
+  opacity: 0.6;
+  svg {
+    path {
+      fill: var(--black);
+    }
+  }
+  &:hover {
+    opacity: 0.6 !important;
+  }
+}

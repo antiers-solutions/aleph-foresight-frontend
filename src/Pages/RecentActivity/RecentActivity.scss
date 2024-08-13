@@ -1,0 +1,129 @@
+.recentActivity {
+  background: linear-gradient(
+    359deg,
+    #14202a 0.72%,
+    rgba(17, 27, 36, 0.35) 105.21%
+  );
+  margin-top: 90px;
+  padding: 60px 0;
+  @media (max-width: 767px) {
+    margin-top: 50px;
+    padding: 40px 0;
+  }
+  .recentHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    h2 {
+      color: var(--white);
+      text-align: center;
+      font-size: var(--headingOne);
+      font-weight: 600;
+      // padding-bottom: 32px;
+    }
+  }
+  .recentBtn {
+    // margin-top: 85px;
+    // @media (max-width: 767px) {
+    //   margin-top: 50px;
+    // }
+    button {
+      max-width: 108px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+.recentActivitycard {
+  display: flex;
+  gap: 17px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  .currentPrice {
+    h2 {
+      .marketTd {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+  .cardOuter {
+    border-radius: 32px;
+    background: linear-gradient(
+      272deg,
+      rgba(23, 37, 50, 0.08) -2.55%,
+      rgba(37, 59, 79, 0.69) 50.31%,
+      #131d26 103%
+    );
+    padding: 26px;
+    padding-top: 26px;
+    width: calc(33.33% - 15px);
+    padding-top: 16px;
+    @media (max-width: 1100px) {
+      width: calc(50% - 15px);
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    .topCard {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      .currentPrice { 
+        .inerDetail {
+          display: flex;
+          p {
+            white-space: nowrap;
+            color: var(--darkPurple);
+            font-weight: 600;
+          }
+        }
+      } 
+      .imageData {
+        img {
+          width: 67.364px;
+          height: 67.387px;
+          border-radius: 50%;
+          @media (max-width: 767px) {
+            width: 45px;
+            height: 45px;
+          }
+        }
+      }
+      h4 {
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        @media (max-width: 1200px) {
+          font-size: 14px;
+        }
+      }
+      h2 {
+        color: var(--grayDarkABB9C4);
+        font-size: var(--mediumParaGraph);
+        font-weight: 500;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-top: 9px;
+        .bidDecision {
+          color: var(--success);
+        }
+        .azeroPrice {
+          color: var(--darkPurple);
+          white-space: nowrap;
+        }
+        .withdrew {
+          color: #f3ba2f;
+        }
+      }
+    }
+  }
+}
+.withdraw {
+  color: #f3ba2f;
+}

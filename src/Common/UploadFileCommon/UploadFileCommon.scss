@@ -1,0 +1,19 @@
+.ant-upload-list-item-container {
+  flex: 1;
+  height: 150px !important;
+  img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .ant-tooltip {
+    display: none !important;
+  }
+}
+.upload-box img {
+  height: 13em;
+  object-fit: cover !important;
+}
+.ant-upload-list {
+  justify-content: space-between;
+  gap: 20px;
+}

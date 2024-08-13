@@ -1,0 +1,459 @@
+.marketPlace {
+  margin-bottom: 60px;
+  .topMarket {
+    margin-top: 30px;
+  }
+  .eventSec {
+    padding-bottom: 92px;
+    .topCard {
+      margin-bottom: 31px;
+    }
+  }
+  .cards {
+    margin-top: 20px;
+  }
+}
+.marketBack {
+  margin-top: 18px;
+  p {
+    color: var(--grayDarkABB9C4);
+    font-size: var(--largeParaGraph16);
+    font-weight: 600;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.searchFilter {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  .inputLayout {
+    width: 100%;
+  }
+  .filter {
+    display: flex;
+    gap: 10px;
+    @media (max-width: 420px) {
+      flex-wrap: wrap;
+    }
+  }
+}
+.aboutMarket {
+  margin-top: 20px;
+  margin-bottom: 90px;
+  display: flex;
+  gap: 20px;
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
+  .leftSec {
+    width: 100%;
+  }
+  .topHeading {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    text-align: left;
+    border-radius: 20px;
+    background: linear-gradient(2deg, #172532 2.35%, #253b4f 93.01%);
+    padding: 24px;
+    position: relative;
+    position: relative;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 0px;
+    }
+    .imgSec {
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        margin: 30px;
+      }
+    }
+    .currentPrice {
+      .totalbets {
+        // margin-left: 30px;
+      }
+      h2 {
+        color: var(--white);
+        font-size: var(--headingTwo);
+        font-weight: 600;
+      }
+      h4 {
+        color: var(--white);
+        font-size: var(--largeParaGraph16);
+        font-weight: 600;
+        margin-top: 17px;
+        display: flex;
+        gap: 10px;
+      }
+      h3 {
+        color: var(--white);
+        font-size: var(--largeParaGraph);
+        font-weight: 600;
+        margin-top: 7px;
+        display: flex;
+        gap: 10px;
+        .gray {
+          color: var(--grayDarkABB9C4);
+        }
+      }
+    }
+    button {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      gap: 2px;
+      width: 80px;
+      height: 38px;
+    }
+  }
+  .anoutEvent {
+    .aboutEventHeading {
+      margin: 30px 0;
+      text-align: left;
+      h2 {
+        color: var(--white);
+        font-size: var(--headingTwo);
+        font-weight: 600;
+      }
+    }
+    .aboutDetail {
+      p {
+        color: var(--grayDarkABB9C4);
+        font-size: var(--largeParaGraph16);
+        font-weight: 500;
+        text-align: left;
+        padding-top: 10px;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+    .betDate {
+      display: flex;
+      text-align: left;
+      gap: 45px;
+      padding-top: 40px;
+      @media (max-width: 1100px) {
+        gap: 20px;
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .innerMultiDate {
+        border-right: 1px solid var(--grayDarkABB9C4);
+        padding-right: 45px;
+        @media (max-width: 1100px) {
+          padding-right: 20px;
+        }
+        @media (max-width: 767px) {
+          border-right: 0;
+          padding-right: 0px;
+          border-bottom: 1px solid var(--grayDarkABB9C4);
+          padding-bottom: 15px;
+        }
+        &:last-child {
+          border-right: 0;
+          padding-right: 0;
+        }
+        h2 {
+          color: var(--white);
+          font-size: var(--largeParaGraph16);
+          font-weight: 600;
+          padding-top: 13px;
+        }
+        p {
+          color: var(--grayDarkABB9C4);
+          font-size: var(--largeParaGraph16);
+          font-weight: 500;
+        }
+      }
+    }
+    .sourceTruth {
+      display: flex;
+      gap: 30px;
+      &.yesnoBtn {
+        height: 54px;
+        border-radius: 10px;
+      }
+      &.ant-skeleton-input {
+        height: 78px;
+        margin-left: -18px;
+        width: 100%;
+        border-radius: 20px;
+      }
+      @media (max-width: 767px) {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .resolutionSec {
+        display: flex;
+        gap: 14px;
+        border-radius: 10px;
+        background: var(--gray223648);
+        padding: 19px;
+        text-align: left;
+        width: 100%;
+      }
+      .rightSec {
+        h2 {
+          color: var(--grayDarkABB9C4);
+          font-size: var(--largeParaGraph16);
+          font-weight: 500;
+        }
+        &_link {
+          color: var(--darkPurple);
+          font-size: var(--largeParaGraph16);
+          font-weight: 600;
+          padding-top: 13px;
+          word-break: break-all;
+        }
+      }
+    }
+    .positionTable {
+      h2 {
+        color: var(--white);
+        font-size: var(--headingTwo);
+        font-weight: 600;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        text-align: left;
+      }
+      .commonTable .ant-table {
+        @media (max-width: 580px) {
+          max-width: 400px;
+        }
+        @media (max-width: 430px) {
+          max-width: 350px;
+        }
+        @media (max-width: 380px) {
+          max-width: 300px;
+        }
+      }
+      .commonTable .action.pointer {
+        cursor: pointer;
+      }
+      .commonTable .action.no-pointer {
+        pointer-events: none;
+      }
+      .commonTable {
+        .ant-table-cell {
+          &:last-child {
+            max-width: 80px;
+          }
+        }
+        .spinerIneers{
+          text-align: left;
+          max-width: 80px;
+        }
+      }
+    }
+  }
+  .rightSec {
+    max-width: 521px;
+    width: 100%;
+    @media (max-width: 1100px) {
+      max-width: 100%;
+    }
+
+    .betSlipCard {
+      border-radius: 20px;
+      background: linear-gradient(2deg, #172532 2.35%, #253b4f 93.01%);
+      padding: 34px 30px;
+      .slipHeading {
+        color: var(--white);
+        font-size: var(--headingTwo);
+        font-weight: 600;
+        padding-bottom: 30px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .yesnoBtn {
+        display: flex;
+        gap: 15px;
+        justify-content: space-around;
+      }
+      .yesBtn {
+        border-radius: 10px;
+        border: 1px solid var(--success);
+        background: var(--mutedBlack);
+        color: var(--success);
+        font-size: var(--largeParaGraph16);
+        font-weight: 600;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        svg {
+          path {
+            fill: var(--success);
+          }
+        }
+        &:hover,
+        &.active {
+          background: var(--success) !important;
+          color: var(--mutedBlack) !important;
+          svg {
+            path {
+              fill: var(--mutedBlack);
+            }
+          }
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+        @media (max-width: 767px) {
+          height: 40px;
+        }
+      }
+      .noBtn {
+        border-radius: 10px;
+        border: 1px solid var(--error);
+        background: var(--mutedBlack);
+        color: var(--error);
+        font-size: var(--largeParaGraph16);
+        font-weight: 600;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        &:hover,
+        &.active {
+          background: var(--error) !important;
+          color: var(--mutedBlack) !important;
+          svg {
+            path {
+              fill: var(--mutedBlack);
+            }
+          }
+        }
+        @media (max-width: 767px) {
+          height: 40px;
+        }
+      }
+      .enterAmount {
+        margin-top: 40px;
+        .labelSec {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 14px;
+          h2 {
+            color: var(--white);
+            font-size: var(--largeParaGraph);
+            font-weight: 500;
+          }
+          p {
+            color: var(--darkPurple);
+            font-size: var(--largeParaGraph1);
+            font-weight: 500;
+            text-decoration-line: underline;
+            &.max-p {
+              cursor: pointer;
+            }
+          }
+        }
+        .inputLayout {
+          .input_custom {
+            border: 1px solid #2e5a6d;
+            background-color: transparent;
+          }
+          .innerTxt {
+            top: 48%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+      .balanceAzero {
+        border-radius: 6px;
+        background: var(--headerBg);
+        padding: 19px 24px;
+        margin-top: 30px;
+        margin-bottom: 33px;
+        p {
+          color: var(--white);
+          font-size: var(--largeParaGraph16);
+          font-weight: 500;
+        }
+      }
+      .platForm {
+        display: flex;
+        justify-content: space-between;
+        color: var(--white);
+        font-size: var(--largeParaGraph16);
+        font-weight: 500;
+        p {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+.topbutton {
+  justify-content: flex-end;
+  button {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+    background: transparent !important;
+    border: unset;
+
+    &:hover,
+    &:focus {
+      outline: none !important;
+      background: transparent !important;
+    }
+  }
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.load-more-div {
+  .ant-btn {
+    .topBtnText{
+      display: flex;
+      // flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    svg {
+      path {
+        fill: #000;
+      }
+    }
+  }
+}

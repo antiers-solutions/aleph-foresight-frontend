@@ -1,0 +1,92 @@
+.footer {
+  background: linear-gradient(
+    75deg,
+    #121b26 0%,
+    #202e39 49.38%,
+    #16202c 99.64%
+  );
+  .innerFooter {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    .listing {
+      ul {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        @media (max-width: 480px) {
+          gap: 25px;
+        }
+
+        li {
+          cursor: pointer;
+          transition: all 0.4s ease;
+          font-size: var(--mediumParaGraph);
+          font-weight: 600;
+          list-style: none;
+          border-left: 1px solid #abb9c4;
+          padding-left:15px;
+          &::marker {
+            color: var(--grayDarkABB9C4);
+          }
+          &:first-child {
+            list-style: none;
+            border: none;
+            padding-left: 0;
+          }
+          .active {
+            color: var(--darkPurple);
+          }
+          a {
+            text-decoration: none;
+            color: var(--grayDarkABB9C4);
+            white-space: nowrap;
+            &:hover {
+              color: var(--darkPurple);
+              text-shadow: 0px 0px 20px var(--textShadow);
+            }
+          }
+        }
+      }
+    }
+    .socialLink {
+      ul {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+.betBig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #386a7f;
+  h2 {
+    color: var(--white);
+    text-align: center;
+    font-size: var(--heading30);
+    font-weight: 800;
+  }
+}

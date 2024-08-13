@@ -1,0 +1,27 @@
+.activityTable {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  &.show-cursor {
+    tbody {
+      tr {
+        cursor: pointer;
+      }
+    }
+  }
+  .fix_width {
+    width: 100%;
+  }
+  .marketTd {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+      width: 21px;
+      height: 21px;
+    }
+  }
+}
+
+.txnHash {
+  color: var(--darkPurple);
+}
